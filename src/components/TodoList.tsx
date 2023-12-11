@@ -6,9 +6,9 @@ import {
   Heading,
   VStack,
 } from '@chakra-ui/react';
-import TodoItem from './TodoItem';
-import TodoInput from './TodoInput';
-import { todoReducer, initialState, TodoAction } from '../reducers/todoReducers';
+// import TodoItem from './TodoItem';
+// import TodoInput from './TodoInput';
+// import { todoReducer, initialState, TodoAction } from '../reducers/todoReducers';
 
 const TodoList: React.FC = () => {
   const [state, dispatch] = useReducer(todoReducer, initialState);
