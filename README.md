@@ -43,13 +43,51 @@ A React Todo List application where users can create a list of tasks to execute.
 ```
 3. Install dependencies:
 
-```bash
- 
-```
+The dependencies are already installed and are present in the repository folder. No need for node_modules in the project folder because of the Yarn PnP feature. To learn more about Yarn PnP, visit [here](https://yarnpkg.com/features/pnp).
+To initiate Yarn PnP, [migration to Yarn PnP](https://yarnpkg.com/migration/guide).
+
 
 ### Usage
 
-1. Start the development server:
+1. Create a vite project with yarn:
+
+```bash
+  yarn create vite my-project-name --template react
+```
+
+2. Install dependences:
+
+```bash
+  yarn install
+```
+
+3. Add additional dependencies/devDependencies:
+
+```bash
+  yarn add <dependencies-name>
+```
+4. To use Yarn PnP, use the following commands:
+
+- Start yarn version to berry:
+
+```bash
+   yarn set version berry
+```
+This will create a `.yarn` & ` .yarnrc.yml` folder and files respectively.
+
+- Set the ` .yarnrc.yml` to `pnp`, in ordet to use Yarn PnP feature:
+
+```bash
+  yarn config set nodeLinker "pnp"
+```
+This will ensure any additional dependencies you download is taken care of by Yarn PnP and installed in the `.yarn` folder.
+
+- Run the below command to remove the `node_modules` folder and use Yarn Pnp instead:
+
+```bash
+  yarn install
+```
+- Start the development server:
 
 ```bash
   yarn run dev
