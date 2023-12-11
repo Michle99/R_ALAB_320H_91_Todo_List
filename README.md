@@ -33,16 +33,22 @@ A React Todo List application where users can create a list of tasks to execute.
 1. Clone the repository:
 
 ```bash
-   git clone https://github.com/Michle99/sba_320h_project.git
+   git clone https://github.com/Michle99/R_ALAB_320H_91_Todo_List.git
 ```
 
 2. Navigate to the project folder:
 
 ```bash
-  cd 
-```
-3. Install dependencies:
+  cd R_ALAB_320H_91_Todo_List
+``` 
 
+3. Start the development server:
+
+```bash
+  yarn run dev
+```
+
+## The Yarn PnP Feature
 The dependencies are already installed and are present in the repository folder. No need for node_modules in the project folder because of the Yarn PnP feature. To learn more about Yarn PnP, visit [here](https://yarnpkg.com/features/pnp).
 To initiate Yarn PnP, [migration to Yarn PnP](https://yarnpkg.com/migration/guide).
 
