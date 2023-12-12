@@ -98,6 +98,13 @@ This will ensure any additional dependencies you download is taken care of by Ya
 ```bash
   yarn run dev
 ```
+
+- Modules resolution for VSCode:
+Run the following command, this will create a `.vscode` folder and install `sdks` folder in the `.yarn` folder.
+```bash
+   yarn dlx @yarnpkg/sdks vscode
+```
+
 - Common Errors encountered using Yarn Pnp:
     - [How to configure VSCode to run Yarn 2 (with PnP) powered TypeScript](https://stackoverflow.com/questions/65328123/how-to-configure-vscode-to-run-yarn-2-with-pnp-powered-typescript)
     - [yarn: cannot find module](https://stackoverflow.com/questions/60778047/yarn-cannot-find-module)
