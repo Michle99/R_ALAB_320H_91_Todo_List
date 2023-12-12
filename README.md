@@ -102,4 +102,4 @@ This will ensure any additional dependencies you download is taken care of by Ya
     - [How to configure VSCode to run Yarn 2 (with PnP) powered TypeScript](https://stackoverflow.com/questions/65328123/how-to-configure-vscode-to-run-yarn-2-with-pnp-powered-typescript)
     - [yarn: cannot find module](https://stackoverflow.com/questions/60778047/yarn-cannot-find-module)
 
-2. Open your browser and visit  http://localhost:5173/.
+5. Open your browser and visit  http://localhost:5173/.
