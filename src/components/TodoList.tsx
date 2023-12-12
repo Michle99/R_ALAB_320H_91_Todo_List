@@ -34,6 +34,7 @@ const TodoList: React.FC = () => {
           mb="4"
           textAlign="center"
           color="teal.500"
+          data-testid="todo-list"
         >
           Todo List
         </Heading>
