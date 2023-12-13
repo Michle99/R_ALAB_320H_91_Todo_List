@@ -98,8 +98,22 @@ This will ensure any additional dependencies you download is taken care of by Ya
 ```bash
   yarn run dev
 ```
-- Common Errors encountered using Yarn Pnp:
+### Common Errors encountered using Yarn Pnp:
     - [How to configure VSCode to run Yarn 2 (with PnP) powered TypeScript](https://stackoverflow.com/questions/65328123/how-to-configure-vscode-to-run-yarn-2-with-pnp-powered-typescript)
+
     - [yarn: cannot find module](https://stackoverflow.com/questions/60778047/yarn-cannot-find-module)
+    
+    - Using `Vitest with Yarn v4.0.2` with PnP, `Vite 5.0.0`, `Vitest 1.0.4`, and `jsdom 23.0.1` or `@testing-library/jest-dom": "^6.1.5"` results in the following errors:
+
+    [Errors encoutered using Vitest and Yarn v4.0.2](https://github.com/vitest-dev/vitest/issues/4413#issuecomment-1853047468)
+
+    - The Fix for the Vitest/jsdom error testing error I encountered was to use `happy-dom` in place of jest-dom:
+      - Install ```happy-dom```:
+
+      ```
+      yarn add -D happy-dom
+      ```
+      - Uninstall any and all jest-dom packages.
+      - For how to do testing with `vitest` and `happy-dom`: [How to Unit Test your React TypeScript App With Vitest and React Testing Library.](https://codingpr.com/test-your-react-app-with-vitest-and-react-testing-library/)
 
 2. Open your browser and visit  http://localhost:5173/.

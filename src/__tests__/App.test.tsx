@@ -6,7 +6,7 @@ describe('App Component', () => {
         render(<App/>);
 
         const todoListElement = screen.getByTestId('todo-list');
-        expect(todoListElement).toBeInTheDocument();
+        expect(todoListElement).toBeTruthy();
         // screen.debug();
     });
 });
