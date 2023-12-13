@@ -98,7 +98,18 @@ This will ensure any additional dependencies you download is taken care of by Ya
 ```bash
   yarn run dev
 ```
+<<<<<<< HEAD
 ### Common Errors encountered using Yarn Pnp:
+=======
+
+- Modules resolution for VSCode:
+Run the following command, this will create a `.vscode` folder and install `sdks` folder in the `.yarn` folder.
+```bash
+   yarn dlx @yarnpkg/sdks vscode
+```
+
+- Common Errors encountered using Yarn Pnp:
+>>>>>>> 8263d5866007940accab3d6bb75c66c3d6155edb
     - [How to configure VSCode to run Yarn 2 (with PnP) powered TypeScript](https://stackoverflow.com/questions/65328123/how-to-configure-vscode-to-run-yarn-2-with-pnp-powered-typescript)
 
     - [yarn: cannot find module](https://stackoverflow.com/questions/60778047/yarn-cannot-find-module)
@@ -116,4 +127,4 @@ This will ensure any additional dependencies you download is taken care of by Ya
       - Uninstall any and all jest-dom packages.
       - For how to do testing with `vitest` and `happy-dom`: [How to Unit Test your React TypeScript App With Vitest and React Testing Library.](https://codingpr.com/test-your-react-app-with-vitest-and-react-testing-library/)
 
-2. Open your browser and visit  http://localhost:5173/.
+5. Open your browser and visit  http://localhost:5173/.
