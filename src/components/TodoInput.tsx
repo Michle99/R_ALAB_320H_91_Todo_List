@@ -26,12 +26,14 @@ const TodoInput: React.FC<TodoInputProps> = ({ addTodo }) => {
         value={text}
         onChange={(e) => setText(e.target.value)}
         mr="2"
+        data-testid="todo-input"
       />
       <Button 
         onClick={handleAddTodo} 
         colorScheme="teal"
         ml="4"
         leftIcon={<AddIcon/>}
+        data-testid="add-todo-button"
       >
         Add Todo
       </Button>

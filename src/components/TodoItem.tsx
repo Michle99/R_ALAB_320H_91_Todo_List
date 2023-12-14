@@ -68,7 +68,16 @@ const TodoItem: React.FC<TodoItemProps> = ({ todo, dispatch }) => {
             onChange={(e) => setEditedText(e.target.value)}
           />
         ) : (
-          <Text textDecoration={todo.complete ? 'line-through' : 'none'}>{todo.text}</Text>
+          <Text 
+            textDecoration={
+              todo.complete ? 
+              'line-through' : 
+              'none'
+            }
+            data-testid="todo-item"
+          >
+            {todo.text}
+          </Text>
         )}
       </Flex>
       <Flex>
