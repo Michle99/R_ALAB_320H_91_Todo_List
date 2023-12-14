@@ -60,11 +60,17 @@ A React Todo List application where users can create a list of tasks to execute.
  yarn dlx @yarnpkg/sdks vscode
 ```
 
-5. To use node-modules instead, go to the `.yarnrc.yml` and set this:
+5. To use node-modules instead, go to the `.yarnrc.yml` and uncommnet this:
 
 ```
 nodeLinker: node-modules
 ```
+ and comment this:
+ 
+```
+nodeLinker: pnp
+```
+ 
 Then run the following command:
 
 ```
