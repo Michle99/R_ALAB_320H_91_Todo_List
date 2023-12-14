@@ -60,6 +60,17 @@ A React Todo List application where users can create a list of tasks to execute.
  yarn dlx @yarnpkg/sdks vscode
 ```
 
+5. To use node-modules instead, go to the `.yarnrc.yml` and set this:
+
+```
+nodeLinker: node-modules
+```
+Then run the following command:
+
+```
+yarn install
+```
+
 ## The Yarn PnP Feature
 The dependencies are already installed and are present in the repository folder. No need for node_modules in the project folder because of the Yarn PnP feature. To learn more about Yarn PnP, visit [here](https://yarnpkg.com/features/pnp).
 To initiate Yarn PnP, [migration to Yarn PnP](https://yarnpkg.com/migration/guide).
