@@ -49,18 +49,31 @@ A React Todo List application where users can create a list of tasks to execute.
   cd R_ALAB_320H_91_Todo_List
 ``` 
 
-3. Start the development server:
+3. When the project is cloned, the error below is encountered:
+```
+- ERROR:
+- Cannot find module '@chakra-ui/icons' or its corresponding type declarations.ts(2307)
+```
+4. Run the following commands to resolve the errors:
+
+```
+yarn install
+```
+Then,
+```
+yarn dlx @yarnpkg/sdks vscode
+```
+The below pane will appear, click `Allow`. The errors should be resolved:
+![error_gone](https://github.com/Michle99/R_ALAB_320H_91_Todo_List/assets/63488970/d303f27c-3f3e-4bd1-8c51-0a15b97850b8)
+
+
+5. Start the development server:
 
 ```bash
   yarn run dev
 ```
-4. Run the following command to make Vscode play nice with Yarn PnP:
 
-```
- yarn dlx @yarnpkg/sdks vscode
-```
-
-5. To use node-modules instead, go to the `.yarnrc.yml` and uncommnet this:
+6. To use node-modules instead, go to the `.yarnrc.yml` and uncommnet this:
 
 ```
 nodeLinker: node-modules
