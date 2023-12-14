@@ -2,6 +2,13 @@
    <h1>React Todo List using useReducer and useState Hooks</h1>
 </div>
 
+## Table of Contents
+1. [Overview](#overview)
+2. [Features](#features)
+3. [Teachnologies Used](#technologies-used)
+4. [Getting Started](#getting-started)
+5. [The Yarn PnP Feature](#the-yarn-pnp-feature)
+6. [Common Errors encountered using Yarn Pnp](#common-errors-encountered-using-yarn-pnp)
 
 ## Overview
 A React Todo List application where users can create a list of tasks to execute.
@@ -46,6 +53,11 @@ A React Todo List application where users can create a list of tasks to execute.
 
 ```bash
   yarn run dev
+```
+4. Run the following command to make Vscode play nice with Yarn PnP:
+
+```
+ yarn dlx @yarnpkg/sdks vscode
 ```
 
 ## The Yarn PnP Feature
