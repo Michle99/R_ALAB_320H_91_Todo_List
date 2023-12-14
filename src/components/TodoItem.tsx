@@ -38,6 +38,7 @@ const TodoItem: React.FC<TodoItemProps> = ({ todo, dispatch }) => {
 
   const handleDelete = () => {
     dispatch({ type: TodoAction.DELETE_TODO, payload: todo.id });
+    console.log(`Deleting todo with id: ${todo.id}`);
   };
 
   const handleToggleComplete = () => {
@@ -60,12 +61,14 @@ const TodoItem: React.FC<TodoItemProps> = ({ todo, dispatch }) => {
           onChange={handleToggleComplete}
           mr="2"
           colorScheme="teal"
+          data-testid="toggle-todo"
         />
         {isEditing ? (
           <Input
             type="text"
             value={editedText}
             onChange={(e) => setEditedText(e.target.value)}
+            data-testid="edit-input"
           />
         ) : (
           <Text 
@@ -106,6 +109,7 @@ const TodoItem: React.FC<TodoItemProps> = ({ todo, dispatch }) => {
               isDisabled={!todo.complete}
               colorScheme="red"
               leftIcon={<DeleteIcon />}
+              data-testid="delete-todo-button"
             >
               Delete
             </Button>

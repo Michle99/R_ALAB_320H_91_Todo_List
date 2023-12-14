@@ -64,10 +64,15 @@ export interface Todo {
           ),
         };
   
-      case TodoAction.DELETE_TODO:
-        return {
-          todos: state.todos.filter((todo: Todo) => todo.id !== action.payload),
-        };
+        case TodoAction.DELETE_TODO: {
+          console.log(`Deleting todo with id: ${action.payload}`);
+          const updatedTodos = state.todos.filter((todo: Todo) => todo.id !== action.payload);
+          console.log('Updated Todos after deletion:', updatedTodos);
+          return {
+            todos: updatedTodos,
+          };
+        }
+          
   
       case TodoAction.TOGGLE_COMPLETE:
         return {
